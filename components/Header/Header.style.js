@@ -5,7 +5,7 @@ export const StyledContainer = styled.header`
   width: 100%;
   padding: 40px 48px;
 
-  @media (min-width: 500px) {
+  @media (min-width: ${({ theme }) => theme.mobileBreakpoint}px) {
     display: flex;
     align-items: center;
   }
